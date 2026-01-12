@@ -207,7 +207,7 @@ Altyapınızı (Terraform, Ansible vb.) kullanarak kurulumları otomatikleştiri
 Üretim (Production) ortamında Swagger UI, H2 Console veya test endpoint'lerini mutlaka kapatın.
 
 **Güncel Kalın**
-Kullanılan framework (Spring, Hibernate vb.) ve kütüphanelerin güvenlik yamalarını takip edin.
+Kullanılan framework (EFCORE, NET CORE, Dapper vb.) ve kütüphanelerin güvenlik yamalarını takip edin.
 
 **Sıkılaştırma (Hardening):**
 Uygulama sunucusunun (Tomcat, Jetty) varsayılan "Server" başlığını (Örn: Server: Apache-Coyote/1.1) gizleyin.

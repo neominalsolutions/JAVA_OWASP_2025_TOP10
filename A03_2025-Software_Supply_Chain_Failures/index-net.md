@@ -5,7 +5,7 @@ Bu risk, modern yazılımların %80-90'ının üçüncü parti kütüphanelerden
 ### Temel Risk Belirtileri:
 
 **Doğrulanmamış Kütüphaneler**
-Maven Central, NPM veya PyPI gibi depolardan rastgele kütüphane çekilmesi.
+Nuget, NPM veya PyPI gibi depolardan rastgele kütüphane çekilmesi.
 
 **Güvensiz Deserialization:**
 Dışarıdan gelen serileştirilmiş verinin (JSON, XML) içeriğinin kontrol edilmeden sisteme kabul edilmesi.

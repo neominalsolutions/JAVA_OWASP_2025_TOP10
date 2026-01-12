@@ -18,7 +18,7 @@ Bu kategori, yazılımın stres altında veya beklenmedik bir durumla karşıla�
 
 **1. Global İstisna Yönetimi ve Bilgi Sızıntısını Önleme**
 
-Kullanıcıya asla teknik detay içeren bir hata sayfası göstermemelisiniz. Spring Boot'ta @ControllerAdvice kullanarak tüm hataları merkezi bir noktada yakalayıp son kullanıcıya anonim bir mesaj dönebilirsiniz.
+Kullanıcıya asla teknik detay içeren bir hata sayfası göstermemelisiniz. NET Core da IExceptionHandler interface kullanarak tüm hataları merkezi bir noktada yakalayıp son kullanıcıya anonim bir mesaj dönebilirsiniz. 
 
 ```csharp
 

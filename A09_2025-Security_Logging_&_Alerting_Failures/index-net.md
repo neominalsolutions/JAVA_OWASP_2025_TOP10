@@ -59,8 +59,8 @@ public class SecurityLoggingMiddleware
 
 ```
 
-**2. Spring Security Audit Events (Denetim Günlükleri)**
-Başarılı/başarısız login denemelerini manuel loglamak yerine Spring'in yerleşik AbstractAuthenticationAuditListener yapısını kullanmalısın.
+**2. (Denetim Günlükleri)**
+Başarılı/başarısız login denemelerini manuel loglamak yerine aşağıdaki gibi JwtBearerEvents üzerinden 401 ve 403 durumları loglanabilir.
 
 ```csharp
 
@@ -96,12 +96,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Serilog Yapılandırması
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
-    .Enrich.FromLogContext() 
+    .Enrich.FromLogContext()
     .Enrich.WithProperty("ApplicationName", "ABC-Service")
     .Enrich.WithProperty("Environment", builder.Environment.EnvironmentName)
     // Çıktıyı JSON formatında konsola veya ağa bas
     .WriteTo.Console(new RenderedCompactJsonFormatter())
-    .WriteTo.Http("http://logstash-server:8080", queueLimitBytes: null) 
+    .WriteTo.Http("http://logstash-server:8080", queueLimitBytes: null)
     .CreateLogger();
 
 builder.Host.UseSerilog(); // Default logger'ı Serilog ile değiştir

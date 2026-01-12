@@ -8,8 +8,6 @@ Injection, kullanıcıdan gelen kontrol edilmemiş verinin bir komut veya sorgu 
 
 **Komut (OS) Injection:** Uygulamanın işletim sistemi komutlarını dışarıdan gelen parametrelerle çalıştırması.
 
-**Object-Graph Navigation Language (OGNL) / Expression Language (EL) Injection:** Özellikle eski Spring ve Struts uygulamalarında görülen, dinamik kod çalıştırma zafiyetleri.
-
 **Log Injection:** Loglara yazılan verinin manipüle edilerek izleme araçlarının (Splunk, ELK vb.) yanıltılması.
 
 #### NET Uygulamalarında Önlemler ve Kod Örnekleri
@@ -186,4 +184,4 @@ public class EncodingUtils
 **Input Validation:** Gelen her veriyi (isName, isEmail, isNumeric) sıkı bir şekilde doğrula.
 **Safe API:** PreparedStatement, Stored Procedures veya güvenli ORM araçlarını tercih et.
 **Least Privilege:** Veritabanı kullanıcısının sadece ihtiyacı olan yetkilere (SELECT, INSERT) sahip olmasını sağla (DROP yetkisi olmasın).
-**Avoid Native Queries:** Mümkünse JPQL veya HQL kullan, Native SQL'e sadece mecbur kaldığında ve parametrik olarak başvur.
+**Avoid Native Queries:** Mümkünse ADO.NET Yerine Dapper MicroORM veya EF gibi ORM tooları, Native SQL'e sadece mecbur kaldığında ve parametrik olarak başvur.

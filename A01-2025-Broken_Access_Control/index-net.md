@@ -543,7 +543,7 @@ public async Task<IActionResult> HandleCallback([FromQuery] string code, [FromQu
 
 // Güvenli Kod:
 
-// En güvenli yöntem, Spring Security OAuth2 Client gibi olgun kütüphaneleri kullanmaktır. Bu kütüphaneler state yönetimini ve PKCE desteğini otomatik sağlar.
+// En güvenli yöntem, Opendict OAuth gibi olgun kütüphaneleri kullanmaktır. Bu kütüphaneler state yönetimini ve PKCE desteğini otomatik sağlar.
 
 // Eğer manuel bir kontrol yapmanız gerekiyorsa mantık mutlaka aşağıdaki gibi olmalıdır:
 
