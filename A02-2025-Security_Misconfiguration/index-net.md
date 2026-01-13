@@ -204,10 +204,10 @@ var app = builder.Build();
 Altyapınızı (Terraform, Ansible vb.) kullanarak kurulumları otomatikleştirin; manuel ayarlar hata riskini artırır.
 
 **Gereksiz Paketleri Kaldırın:**
-Üretim (Production) ortamında Swagger UI, H2 Console veya test endpoint'lerini mutlaka kapatın.
+Üretim (Production) ortamında Swagger UI veya test endpoint'lerini mutlaka kapatın.
 
 **Güncel Kalın**
 Kullanılan framework (EFCORE, NET CORE, Dapper vb.) ve kütüphanelerin güvenlik yamalarını takip edin.
 
 **Sıkılaştırma (Hardening):**
-Uygulama sunucusunun (Tomcat, Jetty) varsayılan "Server" başlığını (Örn: Server: Apache-Coyote/1.1) gizleyin.
+Uygulama sunucusunun IIS üzerinde X-Powered Header gibi uygulama hakkında bilgi veren yapılandırmları ve MaxContentLenght gibi ayarları uygulamayız. veya Ngnix üzerinde 
